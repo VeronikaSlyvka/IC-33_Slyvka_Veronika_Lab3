@@ -36,6 +36,10 @@
     color: white;
 }
 
+map :hover{
+    cursor: pointer;
+}
+
 h1 {
     position: fixed;
     top: 0; 
