@@ -3,15 +3,19 @@
 }
 
 .menu-container ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #216767;
+    /* margin-left: 110px; */
     position: fixed;
     top: 50px; 
     width: 100%;
     z-index: 1000;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu-container li {
@@ -40,23 +44,55 @@ map :hover{
     cursor: pointer;
 }
 
-h1 {
-    position: fixed;
-    top: 0; 
-    width: 100%;
-    text-align: center;
-    color: #1a6060;
-    background-color: white; 
-    z-index: 999;
-    padding: 10px 0;
-    margin: 0;
+/* #logoimg{
+    height: 100px;
+    object-fit: contain; 
 }
 
-h1 + img {
-    margin-top: 65px; 
-    height: 272px; 
+    .logo{
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    padding: 5px 0;
+    z-index: 999; 
+    } */
+
+    h1 {
+        position: fixed;
+        top: 0; 
+        width: 100%;
+        text-align: center;
+        color: #1a6060;
+        background-color: white; 
+        z-index: 999;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+.baner {
+    display: flex;
+    margin-top: 80px; 
+    height: auto; 
+    width: 100%; 
+    max-height: 280px; 
+    max-width: 100%;
+    object-fit: contain; 
 }
 
+@media (max-width: 1024px) {
+    .baner {
+        margin-top: 130px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .baner {
+        margin-top: 180px; 
+    }
+}
 
  #adress, #contacts, #questions{
     font-size: 20px;
@@ -70,10 +106,11 @@ h1 + img {
     text-align: center; 
     font-size: 25px;
     color:  #000; 
-    font-weight: bold;   
+    font-weight: bold; 
+    margin-bottom: 20px;  
 }
 
-#borderbook{
+.borderbooks{
     border-radius: 35px; 
     border: 5px solid #fc6d0a;
     padding: 10px;
@@ -81,29 +118,77 @@ h1 + img {
     margin-bottom: 20px;
 }
 
+.salebooks {
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    align-items: flex-start; 
+    width: 250px;
+}
+
 .photobooks{
-height: 280px;
-margin-left: 50px;
+    display: flex;
+    height: auto;
+    width: 100%; 
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
 .sale{
-    margin-left: 180px;
-    height: 50px;
+    display: flex;
+    height: auto;
+    width: 40%; 
+    object-fit: contain;
+   justify-items: center;
+   margin-bottom: 10px;
+
 }
 
-.sale1{
-    margin-left: 130px;
-    height: 50px;
+.table_contacts_question{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap; 
 }
 
-div > ol{
-    text-align: center; 
+@media (min-width: 769px) {
+    .table_contacts_question {
+        flex-wrap: nowrap; /* На великих екранах елементи залишаються в одному рядку */
+    }
 }
 
-ol li, ul li {
-    list-style-position: inside;
-    margin-bottom: 5px;
-    font-size: 17px;
+@media (max-width: 768px) {
+    .table_contacts_question {
+        flex-direction: column; /* На малих екранах змінюємо напрямок на вертикальний */
+        align-items: center; /* Центрує елементи в контейнері */
+    }
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    align-items: center;
+    /* background-color: #eeeeee;
+    border-radius: 2px ;
+box-shadow:  0px 2px 1px -1px rgba(112, 65, 65, 0,9), 
+0px 1px 1px 0px rgba(0,0,0,0.14) , 
+0px 1px 3px 0px rgba(0,0,0,0.12) ; */
+}
+
+.contacts_question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 caption{
@@ -131,18 +216,17 @@ tr:nth-child(odd) {
     background-color: #D6EEEE;
 }
 
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
 #firstTable{
     background-color:#3a7979; 
     color: white;
 }
 
 #contacts2{
-    font-size: 20px;
-    margin-left: 50px;
-}
-
-#contacts3{
-    margin-left: 500px;
+    font-size: 20px;    
 }
 
 .form{

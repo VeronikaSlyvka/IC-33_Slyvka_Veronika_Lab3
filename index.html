@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrs.Pins bookstore</title>
+    <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body>
     <header> 
      
+        
         <div class="menu-container">
             <nav>
                 <ul>
@@ -25,37 +27,51 @@
 
     <main>
         <p id="main">.</p>
+
+        <!-- <div class="logo">
+        <img id="logoimg" src="./Images/logo.jpg" alt="logo"> -->
         <h1>Книгарня місіс Пінс</h1>
-        <img src="Images/main.jpg" alt="Фото" usemap="#image-map" > 
+       <!-- </div> -->
+
+        <img class="baner" src="Images/main.jpg" alt="Фото" usemap="#image-map" > 
         <map name="image-map">
             <area shape="rect" coords="918,222,585,170" alt="посилання" href="#book">
         </map>
         
-        
-
-        <div id="borderbook"> 
-            <div id="book"> 
+        <div class="borderbooks">
+        <div id="book"> 
             <img src="Images/icons8-fire-48.png" alt="fire">
             <span > Знижки на ілюстровані видання "Гаррі Поттер" від видавництва "А-БА-БА-ГА-ЛА-МА-ГА"</span>
             <img src="Images/icons8-fire-48.png" alt="fire">  </div>
+        <div class="salebooks"> 
             <p></p>
+            <div class="item">
             <img class="photobooks" src="Images/book1.jpg" alt="book">
+            <img class="sale" src="Images/sale.jpg" alt="sale">
+        </div>
+             <div class="item">
             <img class="photobooks"src="Images/book2.jpg" alt="book">
+            <img class="sale" src="Images/sale.jpg" alt="sale">
+        </div>
+            <div class="item">
             <img class="photobooks" src="Images/book3.jpg" alt="book">
+            <img class="sale" src="Images/sale.jpg" alt="sale">
+        </div>
+            <div class="item">
             <img class="photobooks" src="Images/book4.jpg" alt="book">
+            <img class="sale" src="Images/sale.jpg" alt="sale">
+        </div>
+            <div class="item">
             <img class="photobooks"src="Images/book5.jpg" alt="book">
-            <p></p>
             <img class="sale" src="Images/sale.jpg" alt="sale">
-            <img class="sale" src="Images/sale.jpg" alt="sale">
-            <img class="sale" src="Images/sale.jpg" alt="sale">
-            <img class="sale" src="Images/sale.jpg" alt="sale">
-            <img class="sale" src="Images/sale.jpg" alt="sale">
-
+        </div>
+    </div> 
         </div>
 
-
-
         <hr>
+
+        <div class="table_contacts_question">
+            <div class="table">
         <p id="adress"> Не любиш купляти онлайн? Не проблема, шукай наш магазин у твоєму місті і приходь до нас! </p>
         <div class="table-container">
         <table>
@@ -102,11 +118,12 @@
             </tr>
         </table>
     </div>
+</div>
         <hr>
 
-
+<div class="contacts_question">
+    <div class="contacts">
         <p id="contacts"> Якщо виникли питання, наші консультанти з радістю вам допоможуть :) </p>
-       <div id="contacts3">
         <p id="contacts2"> Наші контакти</p>
         <ul>
             <li>Tell: +380985654211</li>
@@ -115,10 +132,9 @@
             <li>Facebook: mrsPins.bookstore</li>
             <li>Gmail: mrsPinsBookstore@gmail.com</li>
         </ul>
-    </div>
-        <hr>
-        
+    </div>       
 
+    <div class="questions">
         <p id="questions">Або вводьте свій номер телефону нижче, і ми самі вам зателефонуємо протягом 10-ти хвилин</p>
         <div class="form">
         <blockquote> Введіть ваш номер телефону</blockquote>        
@@ -128,6 +144,9 @@
         </form> 
         <p></p>
     </div>
+</div>
+</div>
+</div>
 
 
     </main>
